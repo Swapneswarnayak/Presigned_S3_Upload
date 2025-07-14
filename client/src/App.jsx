@@ -14,7 +14,7 @@ const App = () => {
 
   const getPresignedUrlS3 = async () => {
     try {
-      const res = await axios.get("http://localhost:9090/url");
+      const res = await axios.get("https://presigned-s3-upload.onrender.com/url");
       setUrl(res?.data?.url);
       setLoading(false)
     } catch (error) {
